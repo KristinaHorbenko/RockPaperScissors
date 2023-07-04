@@ -21,36 +21,15 @@ public class Player {
         switch (playerMove) {
             case 1:
                 System.out.println("Ви обрали: Камінь");
-                System.out.println("""
-                _______
-            ---'   ____)
-                  (_____)
-                  (_____)
-                  (____)
-            ---.__(___)
-            """);
+                ChoiceSlector.printRock();
                 return Move.ROCK;
             case 2:
                 System.out.println("Ви обрали: Папір");
-                System.out.println("""
-                _______
-            ---'    ____)____
-                       ______)
-                      _______)
-                     _______)
-            ---.__________)
-            """);
+                ChoiceSlector.printPaper();
                 return Move.PAPER;
             case 3:
                 System.out.println("Ви обрали: Ножиці");
-                System.out.println("""
-                _______
-            ---'   ____)____
-                      ______)
-                   __________)
-                  (____)
-            ---.__(___)
-            """);
+                ChoiceSlector.printScissors();
                 return Move.SCISSORS;
             case 4:
                 System.exit(0);
